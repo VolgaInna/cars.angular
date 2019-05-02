@@ -1,0 +1,18 @@
+<div class="container">
+<div class="inputs">
+  <label *ngFor="let model of models">
+  <input  type="checkbox" value="{{model}}" checked (change)="filter($event.target)"/>
+  {{ model }}
+</label>
+<select (change)="sort($event.target)">
+  <option value="up"> Price Up</option>
+  <option value="down"> Price Down</option>
+</select>
+</div>
+<div>
+  <a *ngFor = "let product of filtered" routerLink = "product/{{product.id}}" >
+    {{product.name}} | {{product.price}}
+    <img src="{{product.image}}" alt="">
+  </a>
+</div>
+</div>

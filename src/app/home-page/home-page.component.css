@@ -1,0 +1,21 @@
+img {
+    width: 200px;
+
+}
+
+a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    padding: 10px;
+    background-color: beige;
+    margin: 10px;
+}
+.container {
+    max-width: 800px; 
+}
+div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
